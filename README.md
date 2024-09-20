@@ -57,7 +57,8 @@ Whether managing single or multiple venues, accommodation types, or providing tr
 <td><a href="https://modality.one/wireframes/Modality-wireframe-12.png"><img src="https://modality.one/wireframes/Modality-wireframe-12-thumbnail.png"/></a></td>
 </tr>
 </table>
-## My Contributions to the Project
+
+## Contributions 
 As a key contributor to **EventMaster Pro**, I have focused on several core areas:
 
 1. **Modular System Design**: Spearheaded the modular architecture, allowing users to enable only the features they need, reducing complexity, and increasing flexibility for various organizations.
