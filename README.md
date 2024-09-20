@@ -63,7 +63,7 @@ Whether managing single or multiple venues, accommodation types, or providing tr
 ## My Contributions to the Project
 As a key contributor to **EventMaster Pro**, I have focused on several core areas:
 
-1. **Modular System Design**: Spearheaded the modular architecture, allowing users to enable only the features they need, reducing complexity and increasing flexibility for various organizations.
+1. **Modular System Design**: Spearheaded the modular architecture, allowing users to enable only the features they need, reducing complexity, and increasing flexibility for various organizations.
 2. **Payment System Development**: Implemented the multi-stage payment system, supporting complex payment models such as partial payments and discount codes.
 3. **Event Recurrence Module**: Developed the functionality to handle both one-time and recurring events, allowing users to schedule events over weeks or months.
 4. **User Interface Enhancements**: Refined the front-end using JavaFX to ensure a user-friendly experience across desktop, mobile, and web platforms.
@@ -81,8 +81,3 @@ With the launch of its MVP planned for early 2024, **EventMaster Pro** aims to f
 
 ## License
 **EventMaster Pro** is licensed under the Apache License Version 2.0.
-
-
-
-## License
-Modality is free, open-source software licensed under the [Apache License Version 2.0](LICENSE).
