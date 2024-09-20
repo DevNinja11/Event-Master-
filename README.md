@@ -57,9 +57,6 @@ Whether managing single or multiple venues, accommodation types, or providing tr
 <td><a href="https://modality.one/wireframes/Modality-wireframe-12.png"><img src="https://modality.one/wireframes/Modality-wireframe-12-thumbnail.png"/></a></td>
 </tr>
 </table>
-*The full set of Back-Office wireframes can be found [here](https://www.figma.com/file/Rlz2ur7ZhgaCdnWdd9VzU8/Modality-business-system).
-* The full set of Front-Office wireframes can be found [here](https://www.figma.com/file/ywX9YlVstgPSkBjwXW6pje/Front-end-UI---booking-system?type=design&node-id=0-1).
-
 ## My Contributions to the Project
 As a key contributor to **EventMaster Pro**, I have focused on several core areas:
 
