@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File managed by WebFX (DO NOT EDIT MANUALLY) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>one.modality</groupId>
+        <artifactId>modality</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>modality-ecommerce</artifactId>
+
+    <description>Layer that contains modules for building an E-commerce solution.</description>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>modality-ecommerce-backoffice-activity-bookings-plugin</module>
+        <module>modality-ecommerce-backoffice-activity-moneyflows-plugin</module>
+        <module>modality-ecommerce-backoffice-activity-statistics-plugin</module>
+        <module>modality-ecommerce-backoffice-max-plugin</module>
+        <module>modality-ecommerce-backoffice-min-plugin</module>
+        <module>modality-ecommerce-backoffice-operations-document</module>
+        <module>modality-ecommerce-backoffice-operations-documentline</module>
+        <module>modality-ecommerce-backoffice-operations-moneyflow</module>
+        <module>modality-ecommerce-backoffice-operations-moneytransfer</module>
+        <module>modality-ecommerce-document-service</module>
+        <module>modality-ecommerce-document-service-buscall</module>
+        <module>modality-ecommerce-document-service-remote</module>
+        <module>modality-ecommerce-document-service-server</module>
+        <module>modality-ecommerce-history-server</module>
+        <module>modality-ecommerce-payment</module>
+        <module>modality-ecommerce-payment-buscall</module>
+        <module>modality-ecommerce-payment-client</module>
+        <module>modality-ecommerce-payment-remote</module>
+        <module>modality-ecommerce-payment-server</module>
+        <module>modality-ecommerce-payment-server-gateway</module>
+        <module>modality-ecommerce-payment-server-gateway-authorizedotnet-plugin</module>
+        <module>modality-ecommerce-payment-server-gateway-square-plugin</module>
+        <module>modality-ecommerce-payment-server-gateway-stripe-plugin</module>
+        <module>modality-ecommerce-server-max-plugin</module>
+        <module>modality-ecommerce-server-min-plugin</module>
+    </modules>
+
+</project>

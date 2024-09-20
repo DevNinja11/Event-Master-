@@ -1,0 +1,64 @@
+version: "2.4"
+
+services:
+
+    database:
+        container_name: database
+        build:
+            context: .
+            dockerfile: Dockerfile.db
+            args:
+                - POSTGRES_USER=${POSTGRES_USER}
+                - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+        restart: "no"
+        ports:
+            - '5432:5432'
+        environment:
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+        volumes:
+            - ./data/postgres:/var/lib/postgresql/data
+
+    database_migration:
+        container_name: database_migration
+        image: flyway/flyway:latest
+        environment:
+            # Container run-time arguments
+            # You should already have run previously: source .env
+            - POSTGRES_DBASE=${POSTGRES_DBASE}
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+            - FLYWAY_USER=${POSTGRES_USER}
+            - FLYWAY_PASSWORD=${POSTGRES_PASSWORD}
+            - FLYWAY_URL=jdbc:postgresql://database:5432/${POSTGRES_DBASE}
+            - FLYWAY_BASELINE_ON_MIGRATE=true
+            - FLYWAY_PLACEHOLDER_REPLACEMENT=false
+        command: -locations=filesystem:/flyway/sql -connectRetries=120 migrate
+        volumes:
+            - ../../../main/resources/db:/flyway/sql
+        depends_on:
+            - database
+
+    modality_backoffice:
+        depends_on:
+            - database
+        container_name: modality_backoffice
+        build:
+            context: .
+            dockerfile: Dockerfile.backoffice
+        restart: "no"
+        ports:
+            - '80:80'
+            - '9090:9090'
+        command:  java -jar modality-base-server-application-vertx-1.0.0-SNAPSHOT-fat.jar
+
+    modality_web:
+        depends_on:
+            - modality_backoffice
+        container_name: modality_web
+        build:
+            context: .
+            dockerfile: Dockerfile.web
+        restart: "no"
+        ports:
+            - '8082:8080'

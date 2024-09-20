@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+    <description>The Modality implementation of i18n with English &amp; French dictionaries.</description>
+
+    <exported-packages>
+        <source-packages/>
+        <resource-packages/>
+    </exported-packages>
+
+    <providers>
+        <provider interface="dev.webfx.stack.i18n.operations.ChangeLanguageRequestEmitter">one.modality.base.client.operations.i18n.ChangeLanguageToEnglishRequest$ProvidedEmitter</provider>
+        <provider interface="dev.webfx.stack.i18n.operations.ChangeLanguageRequestEmitter">one.modality.base.client.operations.i18n.ChangeLanguageToFrenchRequest$ProvidedEmitter</provider>
+        <provider interface="dev.webfx.stack.i18n.spi.I18nProvider">one.modality.base.client.services.i18n.ModalityI18nProvider</provider>
+    </providers>
+
+    <dependencies>
+        <used-by-source-modules>
+            <undetected-module>javafx-base</undetected-module>
+        </used-by-source-modules>
+        <plugin-module>modality-base-client-icons</plugin-module>
+        <plugin-module>webfx-stack-i18n-time-plugin</plugin-module>
+    </dependencies>
+
+</project>

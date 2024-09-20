@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+    <description>Define a generic Modality JavaFX application (common code to the back-office and front-office).</description>
+
+    <properties>
+        <show-loading-spinner-on-startup>true</show-loading-spinner-on-startup>
+    </properties>
+
+    <exported-packages>
+        <source-packages/>
+        <resource-packages/>
+    </exported-packages>
+
+    <dependencies>
+        <used-by-source-modules>
+            <module transitive="true">webfx-stack-orm-domainmodel-activity</module> <!-- for Activity in constructor -->
+            <module transitive="true">webfx-stack-routing-activity</module> <!-- for Activity in constructor -->
+            <module transitive="true">webfx-platform-util</module> <!-- for Factory in constructor -->
+            <undetected-module>javafx-controls</undetected-module>
+        </used-by-source-modules>
+
+        <resource-module>modality-base-client-icons</resource-module>
+
+    </dependencies>
+
+</project>

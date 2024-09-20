@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+    <description>Module that loads the domain model in memory (on both client &amp; server).</description>
+
+    <exported-packages>
+        <source-packages/>
+        <resource-packages/>
+    </exported-packages>
+
+    <providers>
+        <provider interface="dev.webfx.stack.orm.domainmodel.service.spi.DomainModelProvider">one.modality.base.shared.services.domainmodel.ModalityDomainModelProvider</provider>
+        <provider interface="dev.webfx.stack.orm.datasourcemodel.service.spi.DataSourceModelProvider">one.modality.base.shared.services.datasourcemodel.ModalityDataSourceModelProvider</provider>
+    </providers>
+
+    <embed-resources>
+        <resource>one/modality/base/shared/domainmodel/DomainModelSnapshot.json</resource>
+    </embed-resources>
+
+    <dependencies>
+        <used-by-source-modules/>
+        <!-- Ensuring JSON format is plugged-in (as the snapshot is in JSON) -->
+        <plugin-module>webfx-platform-ast-json-plugin</plugin-module>
+    </dependencies>
+
+</project>

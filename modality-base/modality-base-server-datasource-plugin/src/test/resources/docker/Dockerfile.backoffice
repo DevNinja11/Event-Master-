@@ -1,0 +1,3 @@
+FROM azul/zulu-openjdk:17.0.2-jre
+
+COPY ./modality-base/modality-base-server-application-vertx/target/modality-base-server-application-vertx-1.0.0-SNAPSHOT-fat.jar /

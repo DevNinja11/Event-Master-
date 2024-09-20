@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File managed by WebFX (DO NOT EDIT MANUALLY) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>one.modality</groupId>
+        <artifactId>modality</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>modality-event</artifactId>
+
+    <description>Layer that contains modules for managing events.</description>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>modality-event-backoffice-activity-recurringevents-plugin</module>
+        <module>modality-event-backoffice-events-buttonselector-plugin</module>
+        <module>modality-event-backoffice-events-ganttcanvas-plugin</module>
+        <module>modality-event-backoffice-events-pm</module>
+        <module>modality-event-backoffice-max-plugin</module>
+        <module>modality-event-backoffice-min-plugin</module>
+        <module>modality-event-client-activity-eventdependent</module>
+        <module>modality-event-client-event-fx</module>
+        <module>modality-event-client-recurringevents</module>
+        <module>modality-event-client-theme</module>
+        <module>modality-event-frontoffice-activity-booking-plugin</module>
+        <module>modality-event-frontoffice-max-plugin</module>
+        <module>modality-event-frontoffice-min-plugin</module>
+        <module>modality-event-server-max-plugin</module>
+        <module>modality-event-server-min-plugin</module>
+    </modules>
+
+</project>

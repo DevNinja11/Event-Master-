@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File managed by WebFX (DO NOT EDIT MANUALLY) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>dev.webfx</groupId>
+        <artifactId>webfx-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>one.modality</groupId>
+    <artifactId>modality</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <description>Modality is a free, open-source, hospitality-oriented booking system.</description>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>modality-sonatype-deploy</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>webfx-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Removing implementation modules from JavaDoc because 1) they are not useful for users 2) gwt modules don't have a module-info.java which generates JavaDoc errors -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <configuration>
+                        <skippedModules>modality-base-client-css-java,modality-base-client-css-web</skippedModules>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>modality-all</module>
+        <module>modality-base</module>
+        <module>modality-catering</module>
+        <module>modality-crm</module>
+        <module>modality-ecommerce</module>
+        <module>modality-event</module>
+        <module>modality-hotel</module>
+        <module>modality-restaurant</module>
+        <module>modality-shop</module>
+    </modules>
+
+</project>
