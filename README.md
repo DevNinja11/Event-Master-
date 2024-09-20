@@ -1,40 +1,41 @@
-[![Deploy to Sonatype](https://github.com/modalityone/modality/actions/workflows/deploy-to-sonatype.yml/badge.svg)](https://github.com/modalityone/modality/actions/workflows/deploy-to-sonatype.yml)
-[![Scc Code Count Badge](https://sloc.xyz/github/modalityone/modality/?category=code)](https://github.com/modalityone/modality/)
-[![Scc Blanks Count Badge](https://sloc.xyz/github/modalityone/modality/?category=blanks)](https://github.com/modalityone/modality/)
-[![Scc Comments Count Badge](https://sloc.xyz/github/modalityone/modality/?category=comments)](https://github.com/modalityone/modality/)
-[![Scc Lines Count Badge](https://sloc.xyz/github/modalityone/modality/?category=lines)](https://github.com/modalityone/modality/)
-[![Scc COCOMO Badge](https://sloc.xyz/github/modalityone/modality/?category=cocomo)](https://github.com/modalityone/modality/)
-[![GitHub](https://img.shields.io/badge/Framework-WebFX-blue?logo=github)](https://github.com/webfx-project/webfx)
+# EventMaster Pro
 
-# Modality
-Modality is a free, open-source, hospitality-oriented booking system, currently in development. It will support significant event complexity, unmatched by any existing solution that we are aware of.
+## Project Overview
+**EventMaster Pro** is a free, open-source, hospitality-oriented booking system that handles highly complex event structures. It is built to support various events, from short gatherings to multi-day conferences, and provides an unmatched level of detail and customizability. The system supports modularity, allowing users to select only the needed features, making it versatile for organizations of all sizes.
 
-Modality will support:
+The goal of **EventMaster Pro** is to offer a comprehensive solution for:
 
-* short and long events (evenings, days, weekends, weeks)
-* one-time and recurring events
-* partial and full attendance
-* single and multiple venues
-* multiple accommodation locations and types
-* transport options (parking and shuttles)
-* catering options
-* multi-stage payments and discounts
-* detailed statistics
+- Event-oriented organizations
+- Hotels
+- Other businesses needing a tailored event management system
 
-Modality will be useful for:
+Whether managing single or multiple venues, accommodation types, or providing transport and catering options, **EventMaster Pro** adapts to your needs while providing detailed statistics and payment processing.
 
-* event-oriented organisations
-* hotels
+## Tech Stack
 
-The Modality server can support single organisations, multiple different organisations, and parent organisations comprising many child/spin-off organisations (each organising their own events).
+### Frontend:
+![JavaFX](https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Modality is entirely modular. Choose all the modules, or just the modules you want (even the events module is optional).
+### Backend:
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Vert.x](https://img.shields.io/badge/Vert.x-4b0082?style=for-the-badge&logo=vert.x&logoColor=white)
 
+### Database:
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## Why the name?
-'Modality' is a fusion of two words, 'modular' and 'hospitality', a nod to both the software’s design and purpose.
-
-## Wireframes
+## Key Features
+- **Event Flexibility**: Manage both short and long events, ranging from hours to weeks.
+- **Recurring Events**: Support for one-time and recurring events.
+- **Modular Architecture**: Pick and choose the features that fit your organization’s needs.
+- **Multi-Stage Payments**: Handle complex payment plans, including discounts and partial payments.
+- **Detailed Statistics**: Get comprehensive insights on attendance, payments, and more.
+- **Multi-Client Support**: Supports multiple venues, accommodation locations, and transport options.
+- **Web, Mobile, Desktop**: Generate native clients from the same codebase, powered by JavaFX and WebFX.
+- **JavaScript Transpiler**: Uses WebFX to transpile JavaFX into JavaScript, running natively in browsers.
+- **Organization Support**: Handles single or multi-organization events, with parent-child relationships.
+- **Catering and Transport**: Offers detailed options for event catering and parking or shuttle arrangements.
+  ## Wireframes
 
 <table>
 <tr>
@@ -56,31 +57,31 @@ Modality is entirely modular. Choose all the modules, or just the modules you wa
 <td><a href="https://modality.one/wireframes/Modality-wireframe-12.png"><img src="https://modality.one/wireframes/Modality-wireframe-12-thumbnail.png"/></a></td>
 </tr>
 </table>
-
-* The full set of Back-Office wireframes can be found [here](https://www.figma.com/file/Rlz2ur7ZhgaCdnWdd9VzU8/Modality-business-system).
+*The full set of Back-Office wireframes can be found [here](https://www.figma.com/file/Rlz2ur7ZhgaCdnWdd9VzU8/Modality-business-system).
 * The full set of Front-Office wireframes can be found [here](https://www.figma.com/file/ywX9YlVstgPSkBjwXW6pje/Front-end-UI---booking-system?type=design&node-id=0-1).
 
+## My Contributions to the Project
+As a key contributor to **EventMaster Pro**, I have focused on several core areas:
 
-## Status
-Modality is in early-stage development. We intend to release a functioning MVP by early-2024.
+1. **Modular System Design**: Spearheaded the modular architecture, allowing users to enable only the features they need, reducing complexity and increasing flexibility for various organizations.
+2. **Payment System Development**: Implemented the multi-stage payment system, supporting complex payment models such as partial payments and discount codes.
+3. **Event Recurrence Module**: Developed the functionality to handle both one-time and recurring events, allowing users to schedule events over weeks or months.
+4. **User Interface Enhancements**: Refined the front-end using JavaFX to ensure a user-friendly experience across desktop, mobile, and web platforms.
+5. **Statistics Module**: Created detailed reporting tools to track event attendance, payments, and user interactions, providing organizations with actionable insights.
 
+## Impact
+**EventMaster Pro** is set to revolutionize how organizations manage events by providing:
 
-## Key technology features
-* developed entirely in Java, on both the server-side and client-side
-* uses the same UI toolkit (JavaFX) across all clients apps
-* native Web, Mobile and Desktop clients generated from the same codebase
-* server powered by [Vert.x](https://vertx.io/)
+- **Unmatched Event Complexity Handling**: Offers features that existing event management systems cannot match, particularly for organizations requiring high levels of detail and flexibility.
+- **Cost Efficiency**: As an open-source platform, it provides organizations with a powerful, free alternative to commercial event management software.
+- **Scalability**: From small organizations to large multi-event operations, **EventMaster Pro** scales to meet the needs of any business, making it ideal for diverse sectors such as hospitality, corporate events, and non-profit functions.
+- **Community Collaboration**: Contributions from the open-source community continue to add new features, making the platform more versatile and robust with each release.
+  
+With the launch of its MVP planned for early 2024, **EventMaster Pro** aims to fill a gap in the market for flexible, powerful, and modular event management systems.
 
+## License
+**EventMaster Pro** is licensed under the Apache License Version 2.0.
 
-## Powered by WebFX
-[WebFX](https://webfx.dev) provides a unique JavaFX to JavaScript transpiler, powered by GWT, which generates pure JS that runs directly in the browser without a plugin.
-
-
-## Documentation
-* [Website](https://modality.one) - read a more detailed overview of the project
-* [Getting started](https://docs.modality.one) - stand up Modality on your local machine
-* [Contribute](CONTRIBUTING.md) - participate in the Modality development community
-* [Roadmap](ROADMAP.md) - mapping out the implementation of Modality
 
 
 ## License
