@@ -35,8 +35,7 @@ Whether managing single or multiple venues, accommodation types, or providing tr
 - **JavaScript Transpiler**: Uses WebFX to transpile JavaFX into JavaScript, running natively in browsers.
 - **Organization Support**: Handles single or multi-organization events, with parent-child relationships.
 - **Catering and Transport**: Offers detailed options for event catering and parking or shuttle arrangements.
-  ## Wireframes
-
+  ## Snapshots
 <table>
 <tr>
 <td><a href="https://modality.one/wireframes/Modality-wireframe-01.png"><img src="https://modality.one/wireframes/Modality-wireframe-01-thumbnail.png"/></a></td>
@@ -56,7 +55,7 @@ Whether managing single or multiple venues, accommodation types, or providing tr
 <td><a href="https://modality.one/wireframes/Modality-wireframe-11.png"><img src="https://modality.one/wireframes/Modality-wireframe-11-thumbnail.png"/></a></td>
 <td><a href="https://modality.one/wireframes/Modality-wireframe-12.png"><img src="https://modality.one/wireframes/Modality-wireframe-12-thumbnail.png"/></a></td>
 </tr>
-
+<table>
 
 ## Contributions 
 As a key contributor to **EventMaster Pro**, I have focused on several core areas:
