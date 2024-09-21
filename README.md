@@ -56,7 +56,7 @@ Whether managing single or multiple venues, accommodation types, or providing tr
 <td><a href="https://modality.one/wireframes/Modality-wireframe-11.png"><img src="https://modality.one/wireframes/Modality-wireframe-11-thumbnail.png"/></a></td>
 <td><a href="https://modality.one/wireframes/Modality-wireframe-12.png"><img src="https://modality.one/wireframes/Modality-wireframe-12-thumbnail.png"/></a></td>
 </tr>
-</table>
+
 
 ## Contributions 
 As a key contributor to **EventMaster Pro**, I have focused on several core areas:
